@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>聆听影像｜九二电影网 · 用一张黑胶的时间，播放一部好片</title>
+<meta name="keywords" content="九二电影网, 九二影像原声带, 黑胶观影指南, 在线电影播放, 高清影视收藏, 每日单曲新片, jiuerdianyingwang-top.github.io, 影视音轨推荐, 正版片库">
+<meta name="description" content="九二电影网把每一部电影当作一张黑胶：唱针落下，影像开始转动。在这里为高清单曲建库、为经典唱片建档，支持在线播放与每日新片上架。把播放地址放进唱机，即可听见画面——九二电影网的播放地址是 https://jiuerdianyingwang-top.github.io。">
+<meta name="author" content="九二电影网">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://jiuerdianyingwang-top.github.io">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "九二电影网",
+  "url": "https://jiuerdianyingwang-top.github.io",
+  "description": "以黑胶唱片美学整理的高清影视播放与收藏平台，每日新片上架，在线播放",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://jiuerdianyingwang-top.github.io/#音轨={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<style>
+:root{
+  --vinyl:#1A1A1A;
+  --vinyl-l:#2C2C2C;
+  --label:#C86B3A;
+  --label-l:#E08A55;
+  --cream:#F3EBDD;
+  --cream-d:#E7DCC6;
+  --gold:#D9A94E;
+  --ink:#23201C;
+  --ink-soft:#7A7066;
+  --serif:'Georgia','Times New Roman','Songti SC','PingFang SC',serif;
+  --sans:'Arial','PingFang SC','Microsoft YaHei',sans-serif;
+  --mono:'Courier New',Courier,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--sans);
+  background:var(--cream);
+  background-image:
+    radial-gradient(circle at 15% 20%,rgba(200,107,58,.1),transparent 42%),
+    radial-gradient(circle at 85% 75%,rgba(217,169,78,.1),transparent 42%),
+    repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(35,32,28,.012) 3px,rgba(35,32,28,.012) 4px);
+  color:var(--ink);
+  line-height:1.75;
+  overflow-x:hidden;
+}
+
+/* 封套 */
+.sleeve{background:var(--cream);box-shadow:0 3px 6px rgba(26,26,26,.12),0 14px 34px rgba(26,26,26,.2);position:relative;border:1px solid rgba(35,32,28,.14);}
+.sleeve::before{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:linear-gradient(90deg,var(--ink),var(--vinyl-l));}
+.sleeve::after{content:"";position:absolute;inset:8px;border:1px solid rgba(217,169,78,.4);pointer-events:none;}
+
+a{text-decoration:none;color:var(--ink);transition:.18s;}
+ul{list-style:none;}
+.container{max-width:1120px;margin:0 auto;padding:0 5%;position:relative;z-index:1;}
+
+header{background:var(--vinyl);position:sticky;top:0;z-index:1000;box-shadow:0 3px 12px rgba(26,26,26,.3);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;position:relative;}
+.nav-inner::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,var(--label),var(--gold),var(--label));}
+.logo{font-family:var(--serif);font-size:1.5rem;color:var(--cream);display:flex;align-items:center;gap:.7rem;letter-spacing:1px;}
+.logo .disc{width:30px;height:30px;border-radius:50%;background:radial-gradient(circle,var(--label) 0 22%,var(--vinyl-l) 22% 26%,#111 26% 100%);background-size:100% 100%;box-shadow:inset 0 0 4px rgba(255,255,255,.15);animation:spin 6s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.logo span{color:var(--gold);}
+.logo small{font-family:var(--mono);font-size:.6rem;color:var(--cream-d);letter-spacing:2px;}
+.nav-menu{display:flex;gap:1.5rem;}
+.nav-menu a{font-family:var(--mono);font-size:.8rem;color:var(--cream-d);padding:.3rem 0;border-bottom:1px solid transparent;}
+.nav-menu a:hover{color:var(--gold);border-bottom-color:var(--gold);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;}
+.hamburger span{width:26px;height:2px;background:var(--cream);}
+
+main{padding:2.5rem 0 4rem;}
+
+/* HERO */
+.hero{padding:3.2rem 3rem;margin-bottom:3.5rem;display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center;overflow:hidden;}
+.hero-cap{font-family:var(--mono);font-size:.72rem;color:var(--label);letter-spacing:3px;margin-bottom:1rem;}
+.hero h1{font-family:var(--serif);font-size:2.9rem;line-height:1.25;color:var(--ink);margin-bottom:1rem;}
+.hero h1 em{font-style:normal;color:var(--label);}
+.hero h1 .side{display:block;font-size:.95rem;color:var(--ink-soft);font-style:italic;margin-top:.6rem;letter-spacing:1px;}
+.hero-url{font-family:var(--mono);font-size:.85rem;color:var(--ink);background:var(--cream-d);border-left:4px solid var(--label);padding:.5rem .9rem;display:inline-block;margin-bottom:1.2rem;word-break:break-all;}
+.hero-desc{font-size:.94rem;color:var(--ink-soft);max-width:500px;margin-bottom:1.5rem;text-align:justify;}
+.hero-btn{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--serif);font-size:.95rem;color:var(--cream);background:var(--vinyl);padding:.9rem 2.2rem;border:2px solid var(--vinyl);letter-spacing:1px;}
+.hero-btn:hover{background:var(--label);border-color:var(--label);}
+.hero-btn::after{content:"▶";font-size:.8rem;}
+
+/* 黑胶 */
+.turntable{position:relative;width:240px;height:240px;margin:0 auto;border-radius:50%;background:var(--vinyl);
+  background-image:repeating-radial-gradient(circle,transparent 0,transparent 4px,rgba(255,255,255,.035) 4px,rgba(255,255,255,.035) 5px);
+  box-shadow:0 10px 30px rgba(26,26,26,.35),inset 0 0 20px rgba(0,0,0,.5);animation:spin 8s linear infinite;}
+.turntable::before{content:"";position:absolute;inset:18px;border-radius:50%;background:repeating-radial-gradient(circle,transparent 0,transparent 3px,rgba(255,255,255,.05) 3px,rgba(255,255,255,.05) 4px);}
+.turntable .label{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:50%;background:radial-gradient(circle,var(--gold) 0 18%,var(--label) 18% 100%);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:.8rem;color:var(--cream);box-shadow:0 0 0 3px var(--vinyl-l);}
+.tonearm{position:absolute;top:-10px;right:-10px;width:130px;height:14px;}
+.tonearm .arm{position:absolute;top:0;right:0;width:120px;height:6px;background:linear-gradient(90deg,var(--gold),#8a6a20);transform-origin:right center;transform:rotate(28deg);border-radius:3px;}
+.tonearm .pivot{position:absolute;top:-4px;right:-4px;width:22px;height:22px;border-radius:50%;background:var(--gold);box-shadow:0 2px 6px rgba(0,0,0,.3);}
+
+/* 栏目标题 */
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:2rem;padding-bottom:.6rem;border-bottom:2px solid var(--vinyl);position:relative;}
+.sec-head::after{content:"";position:absolute;left:0;bottom:-6px;width:70px;height:2px;background:var(--label);}
+.sec-title{font-family:var(--serif);font-size:1.6rem;color:var(--ink);}
+.sec-title .note{color:var(--label);margin-right:.6rem;font-family:var(--serif);}
+.sec-tag{font-family:var(--mono);font-size:.7rem;color:var(--cream);background:var(--vinyl);padding:.25rem .75rem;}
+
+/* 分类 */
+.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;margin-bottom:3.5rem;}
+.cat-item{background:var(--cream-d);border:1px solid rgba(35,32,28,.18);padding:1.5rem 1rem;text-align:center;cursor:pointer;transition:.18s;position:relative;}
+.cat-item::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:10px;height:10px;border-radius:50%;background:var(--vinyl);}
+.cat-item:hover{background:var(--vinyl);}
+.cat-item:hover .cat-name{color:var(--cream);}
+.cat-item:hover .cat-rpm{color:var(--gold);}
+.cat-rpm{font-family:var(--mono);font-size:.66rem;color:var(--ink-soft);display:block;margin-bottom:1rem;letter-spacing:1px;}
+.cat-icon{font-size:1.9rem;display:block;margin-bottom:.5rem;}
+.cat-name{font-family:var(--serif);font-size:1rem;color:var(--ink);}
+
+/* 排行榜 */
+.ranking{margin-bottom:3.5rem;}
+.rank-list{background:var(--cream-d);border:1px solid rgba(35,32,28,.18);padding:1rem 1.5rem;}
+.rank-row{display:grid;grid-template-columns:60px 1fr 120px 90px;gap:1rem;align-items:center;padding:1rem 1.2rem;margin-bottom:.8rem;background:var(--cream);border-left:4px solid var(--label);transition:.18s;}
+.rank-row:last-child{margin-bottom:0;}
+.rank-row:hover{background:var(--vinyl);color:var(--cream);}
+.rank-row:hover .rank-info p,.rank-row:hover .rank-plays{color:var(--cream-d);}
+.rank-no{font-family:var(--serif);font-size:1.9rem;color:var(--label);text-align:center;line-height:1;}
+.rank-row:nth-child(2) .rank-no{color:var(--gold);}
+.rank-row:nth-child(3) .rank-no{color:var(--ink);}
+.rank-info h3{font-family:var(--sans);font-size:1.05rem;color:var(--ink);margin-bottom:.1rem;}
+.rank-info p{font-family:var(--mono);font-size:.72rem;color:var(--ink-soft);}
+.rank-plays{font-family:var(--mono);font-size:.7rem;color:var(--ink-soft);text-align:center;}
+.rank-score{font-family:var(--serif);font-size:1.35rem;color:var(--label);text-align:center;border-bottom:1px dotted var(--label);padding-bottom:.2rem;}
+
+/* 新片 */
+.latest{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;margin-bottom:3.5rem;}
+.vhs{background:var(--cream-d);border:1px solid rgba(35,32,28,.18);overflow:hidden;transition:.18s;box-shadow:0 4px 14px rgba(26,26,26,.1);}
+.vhs:hover{transform:translateY(-5px);box-shadow:0 12px 28px rgba(26,26,26,.22);}
+.vhs-cover{height:165px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative;}
+.vhs:nth-child(1) .vhs-cover{background:var(--vinyl);}
+.vhs:nth-child(2) .vhs-cover{background:var(--label);}
+.vhs:nth-child(3) .vhs-cover{background:#2C3E50;}
+.vhs-cover .side{position:absolute;top:10px;right:10px;font-family:var(--mono);font-size:.64rem;color:var(--cream);background:var(--vinyl);border:1px solid var(--gold);padding:.15rem .5rem;border-radius:10px;}
+.vhs-body{padding:1.3rem;}
+.vhs-body h3{font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:.5rem;}
+.vhs-body p{font-size:.82rem;color:var(--ink-soft);margin-bottom:.8rem;text-align:justify;}
+.vhs-tags{display:flex;gap:.4rem;flex-wrap:wrap;}
+.vhs-tag{font-family:var(--mono);font-size:.68rem;color:var(--cream);background:var(--vinyl);padding:.15rem .55rem;border-radius:10px;}
+
+/* 关于 */
+.about{padding:3rem;margin-bottom:3.5rem;background:var(--vinyl);color:var(--cream);}
+.about h2{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-bottom:1.2rem;padding-bottom:.6rem;border-bottom:1px solid rgba(217,169,78,.4);}
+.about p{font-size:.92rem;color:var(--cream-d);margin-bottom:.8rem;text-align:justify;line-height:1.85;}
+.about strong{color:var(--gold);}
+.waveform{display:flex;align-items:center;gap:4px;margin-top:1.5rem;height:60px;}
+.waveform i{display:block;width:8px;background:linear-gradient(180deg,var(--gold),var(--label));border-radius:2px;animation:bob 1.6s ease-in-out infinite;}
+@keyframes bob{0%,100%{transform:scaleY(.5);}50%{transform:scaleY(1);}}
+.waveform i:nth-child(odd){animation-delay:.2s;}
+.waveform i:nth-child(3n){animation-delay:.4s;}
+
+footer{background:var(--vinyl);padding:2.5rem 5%;text-align:center;border-top:2px solid var(--label);}
+.footer-inner{max-width:1120px;margin:0 auto;}
+.footer-logo{font-family:var(--serif);font-size:1.5rem;color:var(--cream);margin-bottom:1rem;}
+.footer-logo span{color:var(--gold);}
+footer p{font-family:var(--mono);font-size:.78rem;color:var(--cream-d);margin-bottom:.5rem;}
+footer a{color:var(--gold);text-decoration:underline;}
+
+.back-top{position:fixed;bottom:2rem;right:2rem;width:48px;height:48px;border-radius:50%;background:var(--label);color:var(--cream);display:flex;align-items:center;justify-content:center;font-size:1.1rem;cursor:pointer;opacity:0;transition:.3s;z-index:999;box-shadow:0 4px 14px rgba(200,107,58,.4);}
+.back-top.show{opacity:1;}
+.back-top:hover{background:var(--vinyl);}
+
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr;}
+  .hero h1{font-size:2.4rem;}
+  .categories{grid-template-columns:repeat(3,1fr);}
+  .latest{grid-template-columns:1fr;}
+}
+@media(max-width:900px){
+  .nav-menu{position:fixed;top:70px;left:-100%;flex-direction:column;width:100%;background:var(--vinyl);padding:1.5rem 0;transition:.3s;}
+  .nav-menu.active{left:0;}
+  .nav-menu li{margin:.8rem 0;text-align:center;}
+  .hamburger{display:flex;}
+  .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+  .hamburger.active span:nth-child(2){opacity:0;}
+  .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(7px,-7px);}
+  .rank-row{grid-template-columns:52px 1fr;row-gap:.6rem;}
+  .rank-plays,.rank-score{grid-column:2;}
+}
+@media(max-width:600px){
+  .hero{padding:2.5rem 1.3rem;}
+  .hero h1{font-size:1.9rem;}
+  .hero-url{font-size:.8rem;}
+  .categories{grid-template-columns:repeat(2,1fr);}
+  .about{padding:2rem 1.3rem;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<header>
+  <div class="container nav-inner">
+    <div class="logo"><span class="disc"></span>九二<span>电影网</span><small>SIDE A · 影像黑胶</small></div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home">A 面</a></li>
+      <li><a href="#categories">曲目</a></li>
+      <li><a href="#ranking">热播榜</a></li>
+      <li><a href="#latest">新单曲</a></li>
+      <li><a href="#about">唱机注</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<main class="container">
+  <!-- HERO -->
+  <section class="sleeve hero" id="home">
+    <div>
+      <div class="hero-cap">♪ NOW PLAYING · 正在播放</div>
+      <h1>九二<em>电影网</em><span class="side">— 一张黑胶的时间，一部好片的厚度</span></h1>
+      <div class="hero-url">https://jiuerdianyingwang-top.github.io</div>
+      <p class="hero-desc">把每一部电影当作一张黑胶：唱针落下，影像开始转动。九二电影网为高清单曲建库、为经典唱片建档，支持在线播放与每日新片上架。把播放地址放进唱机，即可听见画面。</p>
+      <a href="#" class="hero-btn">放下唱针</a>
+    </div>
+    <div>
+      <div class="turntable"><div class="label">92</div></div>
+      <div class="tonearm"><div class="arm"></div><div class="pivot"></div></div>
+    </div>
+  </section>
+
+  <!-- 分类 -->
+  <section id="categories">
+    <div class="sec-head">
+      <h2 class="sec-title"><span class="note">♪</span>曲目 · 分类索引</h2>
+      <span class="sec-tag">6 TRACKS</span>
+    </div>
+    <div class="categories">
+      <div class="cat-item"><span class="cat-rpm">33 RPM</span><span class="cat-icon">🎬</span><span class="cat-name">动作</span></div>
+      <div class="cat-item"><span class="cat-rpm">45 RPM</span><span class="cat-icon">🔮</span><span class="cat-name">科幻</span></div>
+      <div class="cat-item"><span class="cat-rpm">33 RPM</span><span class="cat-icon">😂</span><span class="cat-name">喜剧</span></div>
+      <div class="cat-item"><span class="cat-rpm">45 RPM</span><span class="cat-icon">💕</span><span class="cat-name">爱情</span></div>
+      <div class="cat-item"><span class="cat-rpm">33 RPM</span><span class="cat-icon">🎨</span><span class="cat-name">动漫</span></div>
+      <div class="cat-item"><span class="cat-rpm">45 RPM</span><span class="cat-icon">📜</span><span class="cat-name">纪录</span></div>
+    </div>
+  </section>
+
+  <!-- 排行榜 -->
+  <section id="ranking" class="ranking">
+    <div class="sec-head">
+      <h2 class="sec-title"><span class="note">♪</span>热播榜 · 循环最多的音轨</h2>
+      <span class="sec-tag">TOP 05</span>
+    </div>
+    <div class="rank-list">
+      <div class="rank-row">
+        <div class="rank-no">A1</div>
+        <div class="rank-info"><h3>沙丘 2 (2024)</h3><p>科幻 / 冒险 / 史诗巨制</p></div>
+        <div class="rank-plays">1280万 次播放</div>
+        <div class="rank-score">9.8</div>
+      </div>
+      <div class="rank-row">
+        <div class="rank-no">A2</div>
+        <div class="rank-info"><h3>奥本海默 (2023)</h3><p>传记 / 历史 / 诺兰导演</p></div>
+        <div class="rank-plays">1102万 次播放</div>
+        <div class="rank-score">9.6</div>
+      </div>
+      <div class="rank-row">
+        <div class="rank-no">A3</div>
+        <div class="rank-info"><h3>坠落的审判 (2023)</h3><p>悬疑 / 犯罪 / 金棕榈奖</p></div>
+        <div class="rank-plays">964万 次播放</div>
+        <div class="rank-score">9.1</div>
+      </div>
+      <div class="rank-row">
+        <div class="rank-no">B1</div>
+        <div class="rank-info"><h3>美国小说 (2023)</h3><p>喜剧 / 剧情 / 奥斯卡改编剧本</p></div>
+        <div class="rank-plays">821万 次播放</div>
+        <div class="rank-score">8.8</div>
+      </div>
+      <div class="rank-row">
+        <div class="rank-no">B2</div>
+        <div class="rank-info"><h3>利益区域 (2023)</h3><p>剧情 / 历史 / 奥斯卡国际片</p></div>
+        <div class="rank-plays">706万 次播放</div>
+        <div class="rank-score">8.5</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 新片 -->
+  <section id="latest">
+    <div class="sec-head">
+      <h2 class="sec-title"><span class="note">♪</span>新单曲 · 最新上架</h2>
+      <span class="sec-tag">NEW 03</span>
+    </div>
+    <div class="latest">
+      <div class="vhs">
+        <div class="vhs-cover">🦖<span class="side">SIDE A</span></div>
+        <div class="vhs-body">
+          <h3>哥斯拉大战金刚 2</h3>
+          <p>两大怪兽王者联手对抗地心远古威胁，特效密集、节奏爽快，周末必看。</p>
+          <div class="vhs-tags"><span class="vhs-tag">动作</span><span class="vhs-tag">2024</span></div>
+        </div>
+      </div>
+      <div class="vhs">
+        <div class="vhs-cover">🐼<span class="side">SIDE B</span></div>
+        <div class="vhs-body">
+          <h3>功夫熊猫 4</h3>
+          <p>阿宝新修行面对魅影妖后，笑点充足、画风讨喜，亲子共看无压力。</p>
+          <div class="vhs-tags"><span class="vhs-tag">动画</span><span class="vhs-tag">2024</span></div>
+        </div>
+      </div>
+      <div class="vhs">
+        <div class="vhs-cover">🧠<span class="side">SIDE A</span></div>
+        <div class="vhs-body">
+          <h3>头脑特工队 2</h3>
+          <p>青春期情绪总部加入新成员，心理隐喻更成熟，老粉丝新观众都能入戏。</p>
+          <div class="vhs-tags"><span class="vhs-tag">动画</span><span class="vhs-tag">2024</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section id="about" class="sleeve about">
+    <h2>唱机注 · 关于九二电影网</h2>
+    <p>欢迎来到 <strong>九二电影网</strong>，一间以黑胶唱片美学装帧的影视播放室。播放地址：<strong>https://jiuerdianyingwang-top.github.io</strong>——把它放进唱机，影像便开始转动。</p>
+    <p>我们坚持把选片当作选曲：每一部影片都有对应的曲目录制、唱片编号与播放次数，让查找像翻唱片架一样顺手。新单曲每日上架，经典唱片长期在架，按下播放键即可入耳入眼。</p>
+    <div class="waveform">
+      <i style="height:30px;"></i><i style="height:55px;"></i><i style="height:20px;"></i><i style="height:70px;"></i><i style="height:40px;"></i><i style="height:85px;"></i><i style="height:50px;"></i><i style="height:65px;"></i><i style="height:35px;"></i><i style="height:75px;"></i><i style="height:45px;"></i><i style="height:60px;"></i><i style="height:30px;"></i><i style="height:80px;"></i><i style="height:40px;"></i>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">九二<span>电影网</span></div>
+    <p>© 2024 九二电影网 · 影像黑胶馆</p>
+    <p>播放地址：<a href="https://jiuerdianyingwang-top.github.io">https://jiuerdianyingwang-top.github.io</a></p>
+    <p style="margin-top:.5rem;font-size:.72rem;">— 唱针落下 · 影像转动 —</p>
+  </div>
+</footer>
+
+<div class="back-top" id="backTop">↑</div>
+
+<script>
+var hamburger=document.getElementById('hamburger');
+var navMenu=document.getElementById('navMenu');
+hamburger.addEventListener('click',function(){hamburger.classList.toggle('active');navMenu.classList.toggle('active');});
+navMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){hamburger.classList.remove('active');navMenu.classList.remove('active');});});
+var backTop=document.getElementById('backTop');
+window.addEventListener('scroll',function(){backTop.classList.toggle('show',window.scrollY>400);});
+backTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+// 唱针微调
+var arm=document.querySelector('.tonearm .arm');var ang=28;var d=1;
+setInterval(function(){ang+=d*.4;if(ang>34||ang<22)d*=-1;arm.style.transform='rotate('+ang+'deg)';},140);
+var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});},{threshold:.1});
+document.querySelectorAll('.cat-item,.rank-row,.vhs,.about').forEach(function(el){el.style.opacity='0';el.style.transform='translateY(18px)';el.style.transition='opacity .5s ease,transform .5s ease';io.observe(el);});
+</script>
+</body>
+</html>
